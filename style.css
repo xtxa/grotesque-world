@@ -1,0 +1,89 @@
+*{
+	text-align: center;
+	
+}
+
+@keyframes backgroundMove{
+	0% {background-color: rgb(111, 57, 255);}
+	25% {background-color: rgb(0, 185, 102);}
+	50% {background-color: rgb(10, 1, 178);}
+	75% {background-color: rgb(118, 30, 199);}
+	100% {background-color: rgb(221, 0, 193);;}
+}
+
+body{
+	margin: 7% 10% 0 10%;
+	overflow: auto;
+	background-color: rgb(111, 57, 255);
+	color: white;
+	animation: backgroundMove 10s infinite alternate;
+}
+
+h1, h2{
+	font-family: lores-21-serif, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+h1{
+	font-size: 8em;
+}
+
+#button a{
+	background-color: orange;
+	border-radius: 50%;
+	text-decoration: none;
+	transition: .2s;
+	padding: 2.5%;
+}
+
+#button a:hover{
+	background-color: #ff6257;
+}
+
+#button{
+	margin: 5% auto;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+p{
+	font-family: ibm-plex-mono,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.5em;
+}
+
+/*iPad/large screen*/
+@media screen and (max-width: 1140px){
+	h1{
+		font-size: 8em;
+	}
+}
+
+/*mobile*/
+@media screen and (max-width: 750px){
+	h1{
+		font-size: 5em;
+	}
+	body{
+		/*margin: 0% 15%;*/
+		overflow: auto;
+/*		display: inline-block;
+		vertical-align: middle;*/
+	}
+	#button{
+		margin: 20% auto;
+		font-size: 1.5em;
+	}
+
+	#button a{
+		padding: 6%;
+	}
+	p{
+		font-size: 1em;
+	}
+}
